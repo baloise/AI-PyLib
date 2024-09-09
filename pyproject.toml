@@ -24,3 +24,6 @@ version = "0.0.1"
 description = "Balsy Partner System"
 license = "Apache 2.0"
 authors = ["AI Circle <aicommunity@groups.baloise.com>"]
+
+[tool.poetry.package]
+include = [    { path = "src/baloise_ai_pylib/resources", include = "src/baloise_ai_pylib/resources/**/*" }]

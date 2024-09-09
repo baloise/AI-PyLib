@@ -1,17 +1,11 @@
+import importlib.resources as pkg_resources
+from baloise_ai_pylib import resources
+
+
 class AIService:
     def banner(self):
-        return ''' ____        _       _               _    ___
-| __ )  __ _| | ___ (_)___  ___     / \\  |_ _|
-|  _ \\ / _` | |/ _ \\| / __|/ _ \\   / _ \\  | |
-| |_) | (_| | | (_) | \\__ \\  __/  / ___ \\ | |
-|____/ \\__,_|_|\\___/|_|___/\\___| /_/   \\_\\___|
-
- _     _ _
-| |   (_) |__  _ __ __ _ _ __ _   _
-| |   | | '_ \\| '__/ _` | '__| | | |
-| |___| | |_) | | | (_| | |  | |_| |
-|_____|_|_.__/|_|  \\__,_|_|   \\__, |
-                              |___/'''
+        with pkg_resources.open_text(resources, "banner.txt") as banner_file:
+            return banner_file.read()
 
 if __name__ == "__main__":
-    print(AIService().banner())  
+    print(AIService().banner())
