@@ -1,19 +1,3 @@
-[project]
-name = "baloise_ai_pylib"
-version = "0.0.1"
-description = "Baloise AI libraray"
-readme = "README.md"
-requires-python = ">=3.8"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache 2.0",
-    "Operating System :: OS Independent",
-]
-
-[project.urls]
-Homepage = "https://github.com/baloise/AI-PyLib"
-Issues = "https://github.com/baloise/AI-PyLib/issues"
-
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
@@ -25,5 +9,8 @@ description = "Balsy Partner System"
 license = "Apache 2.0"
 authors = ["AI Circle <aicommunity@groups.baloise.com>"]
 
-[tool.poetry.package]
-include = [    { path = "src/baloise_ai_pylib/resources", include = "src/baloise_ai_pylib/resources/**/*" }]
+[tool.poetry.dependencies]
+python = "^3.8"
+openai = "^1.44"
+python-dotenv = "^1.0"
+mypy = "^1.11"
