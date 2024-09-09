@@ -8,7 +8,7 @@ pip install git+https://github.com/baloise/AI-PyLib.git
 ```
 ```python
 from baloise_ai_pylib import ai_service
-ais = ai_service.AIServvice()
+ais = ai_service.AIService()
 print(ais.banner())
 ```
 

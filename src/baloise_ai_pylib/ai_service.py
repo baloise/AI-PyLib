@@ -1,4 +1,4 @@
-class AIServvice:
+class AIService:
     def banner(self):
         return ''' ____        _       _               _    ___
 | __ )  __ _| | ___ (_)___  ___     / \\  |_ _|
@@ -14,4 +14,4 @@ class AIServvice:
                               |___/'''
 
 if __name__ == "__main__":
-    print(AIServvice().banner())  
+    print(AIService().banner())  
