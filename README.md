@@ -1,6 +1,17 @@
 # AI-PyLib
 Python library for artificial intelligence
 
+# Usage
+
+```
+pip install git+https://github.com/baloise/AI-PyLib.git
+```
+```python
+from baloise_ai_pylib import ai_service
+ais = ai_service.AIServvice()
+print(ais.banner())
+```
+
 # Setup development environment
 
 ```
