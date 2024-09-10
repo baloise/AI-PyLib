@@ -5,8 +5,7 @@ from openai import OpenAI
 from typing import Optional, Dict, Any, List
 import logging
 from tqdm import tqdm
-from config import RUN_WAIT_TIME, RUN_MAX_RETRIES
-from config import TEMPERATURE, TOP_P, RATE_LIMIT, PARALLEL_REQUEST_LIMIT
+from baloise_ai_pylib.config import TEMPERATURE, TOP_P, RATE_LIMIT, PARALLEL_REQUEST_LIMIT, RUN_WAIT_TIME, RUN_MAX_RETRIES
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from.helpers import get_nested_field
 
