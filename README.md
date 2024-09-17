@@ -16,6 +16,7 @@ print(ais.banner())
 
 ```
 python3 -m venv .venv
+. .venv/bin/activate
 pip install --upgrade build
 python3 -m build
 pip install --editable .

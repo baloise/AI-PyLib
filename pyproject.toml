@@ -10,7 +10,9 @@ license = "Apache 2.0"
 authors = ["AI Circle <aicommunity@groups.baloise.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-openai = "^1.44"
-python-dotenv = "^1.0"
-mypy = "^1.11"
+python = "^3"
+openai = "^1"
+python-dotenv = "^1"
+mypy = "^1"
+requests ="^2"
+types-requests = "^2"
